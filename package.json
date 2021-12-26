@@ -1,0 +1,27 @@
+{
+  "name": "example-koa-prisma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "prisma generate && prisma migrate deploy",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "@prisma/client": "^3.7.0",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^3.7.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
