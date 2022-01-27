@@ -20,7 +20,7 @@
 Koyeb is a developer-friendly serverless platform to deploy apps globally. No-ops, servers, or infrastructure management.
 This repository contains a Koa application using Prisma you can deploy on the Koyeb serverless platform for testing.
 
-This example application is designed to show how a Koa application using Prismacan be deployed on Koyeb.
+This example application is designed to show how a Koa application using Prisma can be deployed on Koyeb.
 
 ## Getting Started
 
