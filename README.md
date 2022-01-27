@@ -52,7 +52,7 @@ On the [Koyeb Control Panel](//app.koyeb.com/apps), click the **Create App** but
 1. Select `GitHub` as the deployment method to use
 2. In the repositories list, select the repository you just forked
 3. Specify the branch to deploy, in this case `main`
-4. Set the DATABASE_URL environment variable with the connection URL for your PostgreSQL database, which should look as follows: `mysql://__USER__:__PASSWORD__@__HOST__/__DATABASE__`
+4. Set the DATABASE_URL environment variable with the connection URL for your MySQL database, which should look as follows: `mysql://__USER__:__PASSWORD__@__HOST__/__DATABASE__`
 5. Then, give your App a name, i.e `koa-prisma-on-koyeb`, and click **Create App.**
 
 You land on the deployment page where you can follow the build of your Koa application. Once the build is completed, your application is being deployed and you will be able to access it via `<YOUR_APP_NAME>-<YOUR_ORG_NAME>.koyeb.app`.
