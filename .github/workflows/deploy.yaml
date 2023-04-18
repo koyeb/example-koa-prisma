@@ -1,0 +1,24 @@
+name: Build and deploy the application to Koyeb
+
+on:
+  schedule:
+    - cron: '20 8 * * *'
+  push:
+    branches:
+      - '*'
+
+jobs:
+  deploy:
+    concurrency:
+      group: "${{ github.ref_name }}"
+      cancel-in-progress: true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build and deploy the application
+        uses: koyeb/action-git-deploy@v1
+        with:
+          app-name: koa-prisma-${{ github.ref_name }}
+          api-token: "${{ secrets.KOYEB_EXAMPLES_APPS_TOKEN }}"
+          service-env: "DATABASE_URL=${{ secrets.MYSQL_URL }}"
+          service-ports: "8080:http"
+          service-routes: "/:8080"
