@@ -19,7 +19,7 @@ jobs:
         with:
           api_token: "${{ secrets.KOYEB_EXAMPLES_APPS_TOKEN }}"
 
-      - name: Create application secrets
+      - name: Create application secret
         uses: koyeb/action-git-deploy/secret@v1
         with:
           secret-name: KOA_PRISMA_DATABASE_URL
