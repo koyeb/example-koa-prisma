@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "build": "prisma generate && prisma migrate deploy",
+    "build": "prisma migrate reset -f",
     "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
