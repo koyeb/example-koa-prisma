@@ -32,3 +32,4 @@ jobs:
           service-env: "DATABASE_URL=@KOA_PRISMA_DATABASE_URL"
           service-ports: "8080:http"
           service-routes: "/:8080"
+          skip-cache: true
